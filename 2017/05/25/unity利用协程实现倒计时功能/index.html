@@ -8,13 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>unity利用协程实现倒计时功能 | 李志文的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="协程函数如下，其中time为总的时间，1234567891011IEnumerator WaitForReborn(int time)&amp;#123;rebornTime = time;//rebornTime为需要在UI上显示的Textwhile (time &amp;gt; 0)&amp;#123;yield return new WaitForSeconds(1);time--;rebornTime = tim">
+<meta name="keywords" content="c#,unity">
+<meta property="og:type" content="article">
 <meta property="og:title" content="unity利用协程实现倒计时功能">
 <meta property="og:url" content="http://yoursite.com/2017/05/25/unity利用协程实现倒计时功能/index.html">
 <meta property="og:site_name" content="李志文的博客">
-<meta property="og:updated_time" content="2017-05-25T06:20:07.027Z">
+<meta property="og:description" content="协程函数如下，其中time为总的时间，1234567891011IEnumerator WaitForReborn(int time)&amp;#123;rebornTime = time;//rebornTime为需要在UI上显示的Textwhile (time &amp;gt; 0)&amp;#123;yield return new WaitForSeconds(1);time--;rebornTime = tim">
+<meta property="og:updated_time" content="2017-05-25T06:45:57.394Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="unity利用协程实现倒计时功能">
+<meta name="twitter:description" content="协程函数如下，其中time为总的时间，1234567891011IEnumerator WaitForReborn(int time)&amp;#123;rebornTime = time;//rebornTime为需要在UI上显示的Textwhile (time &amp;gt; 0)&amp;#123;yield return new WaitForSeconds(1);time--;rebornTime = tim">
   
     <link rel="alternative" href="/atom.xml" title="李志文的博客" type="application/atom+xml">
   
@@ -161,7 +165,8 @@
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="协程函数如下，其中time为总的时间，"><a href="#协程函数如下，其中time为总的时间，" class="headerlink" title="协程函数如下，其中time为总的时间，"></a>协程函数如下，其中time为总的时间，</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">IEnumerator WaitForReborn(int time)</div><div class="line">&#123;</div><div class="line">rebornTime = time;//rebornTime为需要在UI上显示的Text</div><div class="line"><span class="keyword">while</span> (time &gt; <span class="number">0</span>)</div><div class="line">&#123;</div><div class="line"><span class="keyword">yield</span> <span class="keyword">return</span> new WaitForSeconds(<span class="number">1</span>);</div><div class="line">time--;</div><div class="line">rebornTime = time;</div><div class="line">&#125;</div><div class="line">OnReborn();//time=<span class="number">0</span>时执行的函数</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="然后通过StartCoroutine-WaitForReborn-TOTAL-TIME-调用该协程。"><a href="#然后通过StartCoroutine-WaitForReborn-TOTAL-TIME-调用该协程。" class="headerlink" title="然后通过StartCoroutine(WaitForReborn(TOTAL_TIME))调用该协程。"></a>然后通过StartCoroutine(WaitForReborn(TOTAL_TIME))调用该协程。</h3>
       
 
       
@@ -169,6 +174,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">c#</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">unity</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -232,6 +252,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/05/25/8年后，我上初中了/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          8年后，我上初中了
+        
+      </div>
+    </a>
   
   
     <a href="/2017/05/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -360,6 +389,18 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">回忆</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学生</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">unity</a>
               </li>
             
             <div class="clearfix"></div>
