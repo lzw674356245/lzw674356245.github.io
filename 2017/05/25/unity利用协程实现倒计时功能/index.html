@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/25/unity利用协程实现倒计时功能/index.html">
 <meta property="og:site_name" content="李志文的博客">
 <meta property="og:description" content="协程函数如下，其中time为总的时间，1234567891011IEnumerator WaitForReborn(int time)&amp;#123;rebornTime = time;//rebornTime为需要在UI上显示的Textwhile (time &amp;gt; 0)&amp;#123;yield return new WaitForSeconds(1);time--;rebornTime = tim">
-<meta property="og:updated_time" content="2017-05-25T06:45:57.394Z">
+<meta property="og:updated_time" content="2017-05-27T02:27:12.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="unity利用协程实现倒计时功能">
 <meta name="twitter:description" content="协程函数如下，其中time为总的时间，1234567891011IEnumerator WaitForReborn(int time)&amp;#123;rebornTime = time;//rebornTime为需要在UI上显示的Textwhile (time &amp;gt; 0)&amp;#123;yield return new WaitForSeconds(1);time--;rebornTime = tim">
@@ -182,7 +182,7 @@
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="协程函数如下，其中time为总的时间，"><a href="#协程函数如下，其中time为总的时间，" class="headerlink" title="协程函数如下，其中time为总的时间，"></a>协程函数如下，其中time为总的时间，</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">IEnumerator WaitForReborn(int time)</div><div class="line">&#123;</div><div class="line">rebornTime = time;//rebornTime为需要在UI上显示的Text</div><div class="line"><span class="keyword">while</span> (time &gt; <span class="number">0</span>)</div><div class="line">&#123;</div><div class="line"><span class="keyword">yield</span> <span class="keyword">return</span> new WaitForSeconds(<span class="number">1</span>);</div><div class="line">time--;</div><div class="line">rebornTime = time;</div><div class="line">&#125;</div><div class="line">OnReborn();//time=<span class="number">0</span>时执行的函数</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h2 id="协程函数如下，其中time为总的时间，"><a href="#协程函数如下，其中time为总的时间，" class="headerlink" title="协程函数如下，其中time为总的时间，"></a>协程函数如下，其中time为总的时间，</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function">IEnumerator <span class="title">WaitForReborn</span><span class="params">(<span class="keyword">int</span> time)</span></span></div><div class="line">&#123;</div><div class="line">rebornTime = time;<span class="comment">//rebornTime为需要在UI上显示的Text</span></div><div class="line"><span class="keyword">while</span> (time &gt; <span class="number">0</span>)</div><div class="line">&#123;</div><div class="line"><span class="function">yield return new <span class="title">WaitForSeconds</span><span class="params">(<span class="number">1</span>)</span></span>;</div><div class="line">time--;</div><div class="line">rebornTime = time;</div><div class="line">&#125;</div><div class="line">OnReborn();<span class="comment">//time=0时执行的函数</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="然后通过StartCoroutine-WaitForReborn-TOTAL-TIME-调用该协程。"><a href="#然后通过StartCoroutine-WaitForReborn-TOTAL-TIME-调用该协程。" class="headerlink" title="然后通过StartCoroutine(WaitForReborn(TOTAL_TIME))调用该协程。"></a>然后通过StartCoroutine(WaitForReborn(TOTAL_TIME))调用该协程。</h3>
       
 
@@ -399,14 +399,6 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">回忆</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学生</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">c#</a>
               </li>
              
@@ -420,6 +412,18 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">unity</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">回忆</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学生</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
             
             <div class="clearfix"></div>
